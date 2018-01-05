@@ -37,14 +37,16 @@ The days after I applied for the internship were one of the most challenging and
 Solution to Use case 2 : How do boys and girls perform across states?
 
 I started off by removing all the irrelevant columns such as Father's occupation, Watching TV, etc and retained only the percentages,Gender and the region. I then sorted the data, firstly on the basis of Gender and then the States and then the percentages; Though this might seem as an unneccessary move, it proves to be very insightful. For example, all the unknown gender values are pushed to the bottom, giving you a clear picture of the data you wish to use. After this, I just had to remove all unknown gender values. After this, I dropped the 'NaNs' by firstly threshing out the rows that did not have atleast 4 non null values. I did this since, 4 values included a gender and a region record and approximations would be erroneous if we had less than 2 out of the 4 subjects. After this, I sorted it again for safe measure and then interpolated the values. This is where sorted values come in handy again and give more consistent data to work with. Data is cleaned, now moving to the fun part, the question clearly indicates a comparision; what better way to compare than an old-fashioned "girls are better than guys fight". Thats exactly what I did; I used a macro map from your website to plot the performances of guys and girls, region wise; It was pretty evident from this comparision that girls seemed to be taking the win.[Link to Visual]() or you could click [here-Male](https://github.com/revannth/Gramener_interview/blob/master/Male_Data.xlsm) to get the macro enabled excel sheet or [here-Female](https://github.com/revannth/Gramener_interview/blob/master/Female_Data.xlsm). But this wasnt evidence enough, hence I used the data scientist's best friend, scatterplot, to decide a proper winner. [Link to the Visual](https://sleepy-plateau-86658.herokuapp.com/boyvgirl)
+![](https://sleepy-plateau-86658.herokuapp.com/boyvgirl)
 
 With girls winning in 20 regions out of the 35 total regions, the winners are pretty evident.
 
 #### Solution to the question : Girls outperformed guys in 20 states.
 
-### Additional usecase : 
+### Additional usecases : 
 From the two regional maps, you can clearly observe that Women outperformed boys fair and square in places like Kerala,Goa and Orrissa(being the largest margin of difference), we cannot neglect the fact that though such bright students exists, either because of parental pressure or because of the lack of facilities, girls dropout at a very high rate.
-### Another observation is that the South India states, 
+
+Another observation is that the South India states, 
 see a fair competition between the girl and boy students; This is not because of the higher competence of South Indian boys, but because of a smaller population, when compared to the North; where in the Boy to Girl ratio is far more superior.
 
 ### Solution to Use case 3 : Do students from South Indian states really excel at Math and Science?
